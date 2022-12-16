@@ -1,0 +1,15 @@
+server:
+  port: 9596
+---
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: testng
+    password: testng
+    data-source-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+---
