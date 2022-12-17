@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class MySchoolServiceImpl implements MySchoolService{
 
-    private MySchoolRepo mySchoolRepo;
+    private final MySchoolRepo mySchoolRepo;
 
     public MySchoolServiceImpl(MySchoolRepo mySchoolRepo) {
         this.mySchoolRepo = mySchoolRepo;

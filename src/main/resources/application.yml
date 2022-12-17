@@ -12,4 +12,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true   #this value is to resolve issue for class inside class inside class
 ---
