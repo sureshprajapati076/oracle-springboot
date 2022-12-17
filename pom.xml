@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.oracle</groupId>
-	<artifactId>school</artifactId>
+	<artifactId>randomuser</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Random Users</name>
 	<description>Oracle Example</description>
