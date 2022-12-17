@@ -1,5 +1,6 @@
 package com.oracle.school.randomuser.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,9 +35,11 @@ public class RandomUser{
     private String gender;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "name")
     private Name name;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "location")
     private Location location;
 
 
@@ -44,21 +47,26 @@ public class RandomUser{
     private String email;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "login")
     private Login login;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "dob")
     private Dob dob;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "registered")
     private Registered registered;
 
     private String phone;
     private String cell;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "id")
     private Identity id;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JsonProperty(value = "picture")
     private Picture picture;
 
     private String nat;

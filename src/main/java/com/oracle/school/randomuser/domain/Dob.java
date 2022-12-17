@@ -1,6 +1,7 @@
 package com.oracle.school.randomuser.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,7 @@ public class Dob {
     private Long sn;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
-    private LocalDateTime date;
+    @JsonProperty(value = "date")
+    private LocalDateTime dateOfBirth;
     private int age;
 }
