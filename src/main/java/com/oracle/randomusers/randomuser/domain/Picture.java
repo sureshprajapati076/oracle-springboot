@@ -1,4 +1,4 @@
-package com.oracle.school.randomuser.domain;
+package com.oracle.randomusers.randomuser.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
@@ -11,17 +11,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "Timezone")
+@Table(name = "Picture")
 @Entity
 @AllArgsConstructor
 @Getter
 @Setter
 @NoArgsConstructor
-public class Timezone{
+public class Picture{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
     private Long id;
-    private String offset;
-    private String description;
+    private String large;
+    private String medium;
+    private String thumbnail;
 }

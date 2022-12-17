@@ -1,7 +1,7 @@
-package com.oracle.school.service;
+package com.oracle.randomusers.service;
 
-import com.oracle.school.randomuser.domain.RandomUser;
-import com.oracle.school.repo.RandomUserRepo;
+import com.oracle.randomusers.randomuser.domain.RandomUser;
+import com.oracle.randomusers.repo.RandomUserRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

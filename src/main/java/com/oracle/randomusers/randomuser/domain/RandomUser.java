@@ -1,4 +1,4 @@
-package com.oracle.school.randomuser.domain;
+package com.oracle.randomusers.randomuser.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

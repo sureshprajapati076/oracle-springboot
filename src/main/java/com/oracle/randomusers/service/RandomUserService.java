@@ -1,6 +1,6 @@
-package com.oracle.school.service;
+package com.oracle.randomusers.service;
 
-import com.oracle.school.randomuser.domain.RandomUser;
+import com.oracle.randomusers.randomuser.domain.RandomUser;
 
 import java.util.List;
 

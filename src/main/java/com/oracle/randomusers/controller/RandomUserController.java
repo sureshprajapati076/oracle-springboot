@@ -1,7 +1,7 @@
-package com.oracle.school.controller;
+package com.oracle.randomusers.controller;
 
-import com.oracle.school.randomuser.domain.RandomUser;
-import com.oracle.school.service.RandomUserService;
+import com.oracle.randomusers.randomuser.domain.RandomUser;
+import com.oracle.randomusers.service.RandomUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

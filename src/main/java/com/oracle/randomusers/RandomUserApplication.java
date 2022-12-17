@@ -1,13 +1,13 @@
-package com.oracle.school;
+package com.oracle.randomusers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SchoolApplication {
+public class RandomUserApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SchoolApplication.class, args);
+        SpringApplication.run(RandomUserApplication.class, args);
     }
 
 }

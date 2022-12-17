@@ -1,7 +1,6 @@
-package com.oracle.school.randomuser.domain;
+package com.oracle.randomusers.randomuser.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,18 +11,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "Street")
+@Table(name = "Login")
 @Entity
 @AllArgsConstructor
 @Getter
 @Setter
 @NoArgsConstructor
-public class Street{
+public class Login{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
     private Long id;
-    @JsonProperty("number")
-    private int streetNumber;
-    private String name;
+    private String uuid;
+    private String username;
+    private String password;
+    private String salt;
+    private String md5;
+    private String sha1;
+    private String sha256;
 }

@@ -1,4 +1,4 @@
-package com.oracle.school.exception;
+package com.oracle.randomusers.exception;
 
 public class OracleDbException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.oracle.school.randomuser.domain;
+package com.oracle.randomusers.randomuser.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
@@ -11,18 +11,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "Name")
+@Table(name = "Coordinates")
 @Entity
 @AllArgsConstructor
 @Getter
 @Setter
 @NoArgsConstructor
-public class Name{
+public class Coordinates{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
     private Long id;
-    private String title;
-    private String first;
-    private String last;
+
+    private String latitude;
+    private String longitude;
 }

@@ -1,4 +1,4 @@
-package com.oracle.school.exception;
+package com.oracle.randomusers.exception;
 
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
