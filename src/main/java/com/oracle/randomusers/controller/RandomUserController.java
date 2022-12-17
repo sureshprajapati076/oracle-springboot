@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -24,8 +25,8 @@ public class RandomUserController {
     }
 
     @GetMapping("/getall")
-    public List<RandomUser> getAllRandomUsers() {
-        return randomUserService.getAllRandomUsers();
+    public List<RandomUser> getAllRandomUsers(@RequestParam(name = "pageNo", defaultValue = "0") Integer pageNo) {
+        return randomUserService.getAllRandomUsers(pageNo);
     }
 
 
