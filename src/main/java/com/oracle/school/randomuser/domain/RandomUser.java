@@ -60,7 +60,7 @@ public class RandomUser{
 
     @OneToOne(cascade = CascadeType.ALL)
     @JsonProperty(value = "id")
-    private Identity id;
+    private Identity identity;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JsonProperty(value = "picture")
