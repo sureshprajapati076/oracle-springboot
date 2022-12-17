@@ -1,6 +1,5 @@
 package com.oracle.school.controller;
 
-import com.oracle.school.exception.OracleDbException;
 import com.oracle.school.randomuser.domain.RandomUser;
 import com.oracle.school.service.RandomUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +19,12 @@ public class RandomUserController {
     private RandomUserService randomUserService;
 
     @PostMapping("/add")
-    public RandomUser addRandomUser(@RequestBody RandomUser user){
+    public RandomUser addRandomUser(@RequestBody RandomUser user) {
         return randomUserService.saveRandomUser(user);
     }
 
     @GetMapping("/getall")
-    public List<RandomUser> getAllRandomUsers(){
+    public List<RandomUser> getAllRandomUsers() {
         return randomUserService.getAllRandomUsers();
     }
 

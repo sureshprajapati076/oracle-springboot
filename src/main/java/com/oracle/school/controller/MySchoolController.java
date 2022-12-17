@@ -16,12 +16,12 @@ public class MySchoolController {
     private MySchoolService schoolService;
 
     @GetMapping("/findall")
-    public List<MySchool> findAll(){
+    public List<MySchool> findAll() {
         return schoolService.getAll();
     }
 
     @PostMapping("/add")
-    public MySchool addNewSchool(@RequestBody MySchool school){
+    public MySchool addNewSchool(@RequestBody MySchool school) {
         return schoolService.saveSchool(school);
     }
 }

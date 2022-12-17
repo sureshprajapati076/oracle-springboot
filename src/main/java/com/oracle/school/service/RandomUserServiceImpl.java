@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class RandomUserServiceImpl implements RandomUserService{
+public class RandomUserServiceImpl implements RandomUserService {
 
     private final RandomUserRepo randomUserRepo;
 
-    public RandomUserServiceImpl(RandomUserRepo randomUserRepo){
-        this.randomUserRepo=randomUserRepo;
+    public RandomUserServiceImpl(RandomUserRepo randomUserRepo) {
+        this.randomUserRepo = randomUserRepo;
     }
 
     @Override
