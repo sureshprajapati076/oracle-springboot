@@ -25,7 +25,7 @@ public class Dob {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
     @JsonProperty(value = "date")

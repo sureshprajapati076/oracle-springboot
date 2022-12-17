@@ -17,11 +17,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Timezone {
+public class Timezone{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
     private String offset;
     private String description;
 }

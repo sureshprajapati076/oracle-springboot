@@ -20,7 +20,7 @@ public class Identity {
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
     private String name;
     private String value;
 }

@@ -17,11 +17,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Coordinates {
+public class Coordinates{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
 
     private String latitude;
     private String longitude;

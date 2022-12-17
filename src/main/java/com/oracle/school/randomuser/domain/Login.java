@@ -17,11 +17,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Login {
+public class Login{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
     private String uuid;
     private String username;
     private String password;

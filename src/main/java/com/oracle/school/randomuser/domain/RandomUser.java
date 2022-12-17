@@ -22,11 +22,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 
-public class RandomUser {
+public class RandomUser{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
 
 
     private String gender;

@@ -20,11 +20,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Location {
+public class Location{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
     @OneToOne(cascade = CascadeType.ALL)
     private Street street;
     private String city;

@@ -18,11 +18,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Street {
+public class Street{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
     @JsonProperty("number")
     private int streetNumber;
     private String name;

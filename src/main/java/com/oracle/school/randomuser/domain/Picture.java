@@ -17,11 +17,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Picture {
+public class Picture{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonIgnore
-    private Long sn;
+    private Long id;
     private String large;
     private String medium;
     private String thumbnail;
